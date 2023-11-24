@@ -1,0 +1,42 @@
+﻿.bg_color {
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.img-icon{
+    width:20px;
+    height:20px;
+}
+
+.card-link-black{
+    text-decoration:none;
+    color:#ffffff;
+    font-weight:bold;
+}
+
+.box {
+    box-shadow: 0px 0px 2px 0px;
+}
+
+.sticky_nav {
+    position: sticky;
+    top: 0px;
+    z-index:1;
+}
+
+.btn_px_1 {
+    padding: 2px 10px;
+    font-size: 1.2rem;
+}
+
+.btn_px_2 {
+    padding: 2px 30px;
+    font-size: 1.2rem;
+}
+.btn_px_3 {
+    padding: 2px 40px;
+    font-size: 1.2rem;
+}

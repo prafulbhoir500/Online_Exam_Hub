@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="Online_Exam_Hub.Admin.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Bootstrap CSS -->
+    <link href="../Assets/bootstrap.css" rel="stylesheet" />
+    <link href="../Assets/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-expand-lg bg-warning sticky_nav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="AdminDashboard.aspx">Administrative</a>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    </ul>
+                    <div class="d-flex" role="search">
+                        <asp:Label ID="Label1" runat="server" Text="praful@gmail.com" CssClass="col-form-label mx-3 fw-bold"></asp:Label>
+                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="btn btn-outline-danger">Logout</asp:HyperLink>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <nav id="sidebar" class="col-md-3 d-md-block bg-secondary sidebar" style="position:sticky;top:0px">
+                    <div class="position-sticky">
+                        <ul class="nav flex-column mt-3">
+                            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSourceAdmin" ForeColor="White" StaticDisplayLevels="6" Font-Size="Large"></asp:Menu>
+                            <asp:SiteMapDataSource ID="SiteMapDataSourceAdmin" runat="server" />
+                            <!-- Add more sidebar links as needed -->
+                        </ul>
+                    </div>
+                </nav>
+
+
+                <%--<div class="col-md-3 bg-secondary py-5">
+                
+            </div>--%>
+                <div class="col-md-9 bg-body-tertiary">
+                    <div class="container-fluid">
+                        <div class="mx-3 my-2 d-flex justify-content-end">
+                            <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+                        </div>
+                        <div class="card m-3">
+                            <div class="card-body">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Bootstrap JS and Popper.js -->
+        <script src="../Assets/popper.js"></script>
+        <script src="../Assets/bootstrap.js"></script>
+    </form>
+</body>
+</html>

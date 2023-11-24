@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="~/Admin/AdminDashboard.aspx" title="Dashboard"  description="Admin Section">
+		<siteMapNode url="" title="Users" description="Users">
+			<siteMapNode url="~/Admin/AddRoles.aspx" title="Add Roles"  description=""/>
+			<siteMapNode url="~/Admin/AddStatus.aspx" title="Add Status"  description=""/>
+			<siteMapNode url="~/Admin/AddStudents.aspx" title="Add Student"  description=""/>
+		</siteMapNode>
+
+		<siteMapNode url="" title="Manage" description="Manage">
+			<siteMapNode url="~/Admin/AddCourses.aspx" title=" Add Courses"  description="Courses" />
+			<siteMapNode url="~/Admin/AddQuestions.aspx" title="Add Questions"  description=""/>
+		</siteMapNode>
+
+		<siteMapNode url="" title="Exam" description="Exam">
+			<siteMapNode url="~/Admin/CreateExam.aspx" title="Create Exam"  description=""/>
+			<siteMapNode url="~/Admin/ManageExam.aspx" title="User Exam Details"  description=""/>
+		</siteMapNode>
+		<siteMapNode url="" title="Settings" description="Exam">
+			<siteMapNode url="" title="View Profile"  description=""/>
+			<siteMapNode url="" title="Change Password"  description=""/>
+		</siteMapNode>
+	</siteMapNode>
+</siteMap>
